@@ -4,6 +4,7 @@ import TrendSection from "./components/sections/trend";
 import TopSection from "./components/sections/top";
 import ReviewSection from "./components/sections/review";
 import RecommendationSection from "./components/sections/recommend";
+import Footer from "./components/sections/footer";
 
 const App = () => (
   <div className="font-inter flex flex-col items-center bg-[#1A2217] text-white">
@@ -19,6 +20,7 @@ const App = () => (
       <ReviewSection />
       <RecommendationSection />
     </main>
+    <Footer />
   </div>
 );
 export default App;
