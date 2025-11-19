@@ -4,7 +4,7 @@ import Button from "../ui/button";
 import { shopIcon } from "@/assets";
 
 const TopSection = () => (
-  <section className="flex flex-col items-center gap-20 pb-20">
+  <section className="flex flex-col items-center gap-20 py-20">
     <h2 className="section-heading-shadow text-center text-5xl font-semibold">
       Our Top Selling Plants
     </h2>

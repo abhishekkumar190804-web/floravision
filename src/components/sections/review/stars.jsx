@@ -1,10 +1,13 @@
-import { FullStarIcon } from "@/assets";
+import { FullStarIcon, HalfStarIcon } from "@/assets";
 
 const Stars = ({ star, size = 4, className }) => (
   <div className={("flex " + className).trim()}>
-    {Array.from({ length: star }).map((_) => (
+    {Array.from({ length: Math.floor(star) }).map((_) => (
       <img src={FullStarIcon} alt="star" className={`size-${size}`} />
     ))}
+    {star - Math.floor(star) >= 0.5 && (
+      <img src={HalfStarIcon} alt="star" className={`size-${size}`} />
+    )}
   </div>
 );
 

@@ -3,7 +3,7 @@ import ClippedCard from "../../cards/clipped";
 import Stars from "./stars";
 
 const ReviewSection = () => (
-  <section className="flex flex-col items-center gap-20 pb-20">
+  <section className="flex flex-col items-center gap-20 py-20">
     <h2 className="section-heading-shadow text-center text-5xl font-semibold">Customer Review</h2>
     <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
       {reviews.map(({ name, img, star, message }, i) => (
