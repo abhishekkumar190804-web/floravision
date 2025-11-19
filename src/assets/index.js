@@ -2,5 +2,18 @@ import logoIcon from "./logo.png";
 import searchIcon from "./search.svg";
 import dropdownIcon from "./dropdown.svg";
 import shopIcon from "./shop.svg";
+import playIcon from "./play.svg";
+import RonnieReviewImage from "./customers/ronnie.png";
+import PlantAnglonemaImage from "./plants/anglonema.png";
+import rightArrowIcon from "./right-arrow.svg";
 
-export { logoIcon, searchIcon, dropdownIcon, shopIcon };
+export {
+  logoIcon,
+  searchIcon,
+  dropdownIcon,
+  shopIcon,
+  playIcon,
+  RonnieReviewImage,
+  PlantAnglonemaImage,
+  rightArrowIcon,
+};

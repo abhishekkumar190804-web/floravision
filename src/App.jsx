@@ -1,10 +1,12 @@
-import Header from "./components/header";
+import Header from "@/components/header";
+import HeroSection from "@/components/sections/hero";
 
 const App = () => (
-  <>
-    <section className="bg-hero min-h-[250vh]">
-      <Header />
-    </section>
-  </>
+  <div className="font-inter bg-hero min-h-[250vh] text-white">
+    <Header />
+    <main className="container">
+      <HeroSection />
+    </main>
+  </div>
 );
 export default App;
