@@ -8,6 +8,11 @@ import PlantAnglonemaImage from "./plants/anglonema.png";
 import rightArrowIcon from "./right-arrow.svg";
 import PlantainImage from "./plants/plantain.png";
 import TrendPlantImage from "./plants/trend-2.png";
+import CactusPlantImage from "./plants/cactus.png";
+import SwissPlantImage from "./plants/cactus.png";
+import SansevieriaPlantImage from "./plants/sansevieria.png";
+import AgavePlantImage from "./plants/agave.png";
+
 export {
   logoIcon,
   searchIcon,
@@ -19,4 +24,8 @@ export {
   rightArrowIcon,
   PlantainImage,
   TrendPlantImage,
+  CactusPlantImage,
+  AgavePlantImage,
+  SansevieriaPlantImage,
+  SwissPlantImage
 };
