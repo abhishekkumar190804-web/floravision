@@ -1,1 +1,15 @@
+@import "./assets/fonts/fonts.css";
 @import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter";
+  --font-indieflower: "IndieFlower";
+  --drop-shadow-logo:
+    0 0.145rem 0.116rem #0000000b, 0 0.337rem 0.269rem #00000010, 0 0.605rem 0.484rem #00000014,
+    0 1.004rem 0.803rem #00000017, 0 1.653rem 1.322rem #0000001b, 0 2.889rem 2.312rem #00000020,
+    0 6.25rem 5rem #0000002b;
+}
+
+.bg-hero {
+  @apply bg-[url('/src/assets/hero.jpg')] bg-cover bg-center bg-no-repeat;
+}
