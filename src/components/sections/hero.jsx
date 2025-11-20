@@ -2,9 +2,10 @@ import { PlantAnglonemaImage, playIcon, rightArrowIcon, RonnieReviewImage } from
 import ClippedCard from "../cards/clipped";
 import Button from "../ui/button";
 import Card from "../cards/card";
+import Stars from "./review/stars";
 
 const HeroSection = () => (
-  <section className="mt-20 flex flex-col justify-between p-10 lg:flex-row">
+  <section className="mt-20 flex flex-col justify-between p-10 text-white/75 lg:flex-row">
     <div className="flex flex-col gap-15">
       <div className="lg:max-w-[40vw]">
         <h2 className="text-6xl font-semibold">Earth’s Exhale</h2>
@@ -32,32 +33,36 @@ const HeroSection = () => (
           />
           <div>
             <h3 className="text-xl">Ronnie Hamill</h3>
-            stars
+            <Stars star={4.5} />
           </div>
         </div>
         I can't express how thrilled I am with my new natural plants! They bring such a fresh and
         vibrant energy to my home.
       </Card>
     </div>
-    <div>
-      <ClippedCard className="p-2">
-        <img
-          src={PlantAnglonemaImage}
-          alt="anglonema plant"
-          className="drop-shadow-plant size-70"
-        />
-        <h6 className="text-sm">indoor Plant</h6>
-        <div className="flex items-center justify-between">
-          <h2 className="text-xl">Aglaonema plant</h2>
-          <img src={rightArrowIcon} alt="swipe-right" className="size-3" />
-        </div>
-        <Button className="px-6">Buy Now</Button>
-        <div className="flex justify-center gap-1.5 p-2">
-          <span className="size-1 w-5 rounded-full bg-white"></span>
-          <span className="size-1 rounded-full bg-white"></span>
-          <span className="size-1 rounded-full bg-white"></span>
-        </div>
-      </ClippedCard>
+    <div className="relative top-0 mt-10 md:-top-10">
+      <img
+        src={PlantAnglonemaImage}
+        alt="Anglonema Plant"
+        className="absolute bottom-2/5 left-1/2 z-2 w-full -translate-x-1/2"
+      />
+      <div className="border-wrapper">
+        <ClippedCard className="flex w-80 flex-col justify-around p-8 pt-60 backdrop-blur-lg">
+          <div className="flex flex-col gap-1">
+            <h6 className="text-sm">indoor Plant</h6>
+            <div className="flex items-center justify-between">
+              <h2 className="text-2xl">Aglaonema plant</h2>
+              <img src={rightArrowIcon} alt="swipe-right" className="size-3" />
+            </div>
+            <Button className="mt-2 w-1/2">Buy Now</Button>
+          </div>
+          <div className="mt-2 flex justify-center gap-1.5 p-2">
+            <span className="size-1 w-5 rounded-full bg-white"></span>
+            <span className="size-1 rounded-full bg-white"></span>
+            <span className="size-1 rounded-full bg-white"></span>
+          </div>
+        </ClippedCard>
+      </div>
     </div>
   </section>
 );

@@ -18,11 +18,11 @@ const Footer = () => (
         <h4>LI</h4>
       </div>
     </div>
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center gap-10">
       <h2 className="text-2xl font-extrabold">Quick Link’s</h2>
       <ul>
         {footerNavigation.map(({ name }, i) => (
-          <li key={i} className="underline">
+          <li key={i} className="text-start underline underline-offset-4">
             {name}
           </li>
         ))}

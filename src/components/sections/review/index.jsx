@@ -7,17 +7,16 @@ const ReviewSection = () => (
     <h2 className="section-heading-shadow text-center text-5xl font-semibold">Customer Review</h2>
     <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
       {reviews.map(({ name, img, star, message }, i) => (
-        <ClippedCard key={i} className="flex flex-col items-center p-6 w-[23vw]">
-          <div className="w-full mb-4 flex items-start gap-2">
+        <ClippedCard key={i} className="flex w-[23vw] flex-col items-center p-6">
+          <div className="mb-4 flex w-full items-start gap-2">
             <img
               src={img.src}
               alt={img.alt}
               className="size-10 rounded-full object-cover object-center"
             />
             <div>
-
-            <h3>{name}</h3>
-            <Stars star={star} size={3} />
+              <h3>{name}</h3>
+              <Stars star={star} size={3} />
             </div>
           </div>
           <p>{message}</p>

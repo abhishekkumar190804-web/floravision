@@ -1,4 +1,5 @@
 import { dropdownIcon, logoIcon, searchIcon, shopIcon } from "@/assets";
+import { headerNavigation } from "@/config/navigation.config";
 
 const Header = () => (
   <header className="flex w-full items-center justify-between px-10 pt-10">
@@ -7,27 +8,23 @@ const Header = () => (
       FloraVision.
     </div>
     <ul className="font-indieflower flex gap-5 text-xl">
-      <li className="group cursor-pointer">
-        Home
-        <span className="block h-px w-0 rounded-full bg-white motion-safe:duration-300 motion-reduce:duration-[0ms] group-hover:w-full"></span>
-      </li>
-      <li className="group cursor-pointer">
-        <div className="flex items-center gap-1">
-          Plants Type
-          <img
-            src={dropdownIcon}
-            alt="dropdownIcon"
-            className="size-3 -rotate-180 group-hover:rotate-0 motion-safe:duration-300 motion-reduce:duration-[0ms]"
-          />
-        </div>
-        <span className="block h-px w-0 rounded-full bg-white motion-safe:duration-300 motion-reduce:duration-[0ms] group-hover:w-full"></span>
-      </li>
-      <li className="group cursor-pointer">More
-        <span className="block h-px w-0 rounded-full bg-white motion-safe:duration-300 motion-reduce:duration-[0ms] group-hover:w-full"></span>
-      </li>
-      <li className="group cursor-pointer">Contacts
-        <span className="block h-px w-0 rounded-full bg-white motion-safe:duration-300 motion-reduce:duration-[0ms] group-hover:w-full"></span>
-      </li>
+      {headerNavigation.map(({ name, img }) => (
+        <li className="group cursor-pointer">
+          {img ? (
+            <div className="flex items-center gap-1">
+              {name}
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="size-3 -rotate-180 group-hover:rotate-0 motion-safe:duration-300 motion-reduce:duration-[0ms]"
+              />
+            </div>
+          ) : (
+            name
+          )}
+          <span className="block h-px w-0 rounded-full bg-white group-hover:w-full motion-safe:duration-300 motion-reduce:duration-[0ms]"></span>
+        </li>
+      ))}
     </ul>
     <div className="flex items-center gap-5">
       <button className="cursor-pointer">

@@ -7,8 +7,8 @@ import RecommendationSection from "./components/sections/recommend";
 import Footer from "./components/sections/footer";
 
 const App = () => (
-  <div className="font-inter flex flex-col items-center bg-[#1A2217] text-white">
-    <div className="bg-hero w-screen">
+  <div className="font-inter bg-[#1A2217] text-white">
+    <div className="bg-hero flex w-screen flex-col items-center">
       <Header />
       <main className="container">
         <HeroSection />

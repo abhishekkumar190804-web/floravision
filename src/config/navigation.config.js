@@ -1,3 +1,5 @@
+import { dropdownIcon } from "@/assets";
+
 export const footerNavigation = [
   {
     name: "Home",
@@ -10,5 +12,27 @@ export const footerNavigation = [
   },
   {
     name: "Privacy",
+  },
+];
+
+export const headerNavigation = [
+  {
+    name: "Home",
+    img: false,
+  },
+  {
+    name: "Plants Type",
+    img: {
+      src: dropdownIcon,
+      alt: "dropdown",
+    },
+  },
+  {
+    name: "More",
+    img: false,
+  },
+  {
+    name: "Contact",
+    img: false,
   },
 ];

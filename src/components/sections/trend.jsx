@@ -31,8 +31,8 @@ const TrendSection = () => (
         </div>
       </div>
     </Card>
-    
-    <Card className="flex flex-row-reverse max-w-[90%] items-center justify-evenly rounded-[100px] backdrop-blur-2xl">
+
+    <Card className="flex max-w-[90%] flex-row-reverse items-center justify-evenly rounded-[100px] backdrop-blur-2xl">
       <div className="relative h-80 w-80">
         <img
           src={TrendPlantImage}
@@ -57,7 +57,6 @@ const TrendSection = () => (
         </div>
       </div>
     </Card>
-    
   </section>
 );
 

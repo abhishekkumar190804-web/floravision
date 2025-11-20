@@ -4,7 +4,7 @@ import dropdownIcon from "./dropdown.svg";
 import shopIcon from "./shop.svg";
 import playIcon from "./play.svg";
 import FullStarIcon from "./star.svg";
-import HalfStarIcon from "./half-star.svg"
+import HalfStarIcon from "./half-star.svg";
 import rightArrowIcon from "./right-arrow.svg";
 import PlantAnglonemaImage from "./plants/anglonema.png";
 import PlantainImage from "./plants/plantain.png";
@@ -37,5 +37,5 @@ export {
   LulaReviewImage,
   ShellyReviewImage,
   FullStarIcon,
-  HalfStarIcon
+  HalfStarIcon,
 };
