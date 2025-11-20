@@ -1,10 +1,11 @@
 import { PlantainImage, shopIcon, TrendPlantImage } from "@/assets";
 import Card from "../cards/card";
 import Button from "../ui/button";
+import SectionHeading from "./heading";
 
 const TrendSection = () => (
   <section className="flex flex-col items-center gap-20 pb-20">
-    <h2 className="section-heading-shadow text-center text-5xl font-semibold">Our Trendy plants</h2>
+    <SectionHeading title={"Our Trendy plants"} />
 
     <Card className="flex max-w-[90%] items-center justify-evenly rounded-[100px] backdrop-blur-2xl">
       <div className="relative h-80 w-80">

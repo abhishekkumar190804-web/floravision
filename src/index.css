@@ -6,6 +6,11 @@
   --font-indieflower: "IndieFlower";
 }
 
+::selection {
+  background: #216308;
+  color: #fff;
+}
+
 .bg-hero {
   @apply bg-[url('/src/assets/hero.jpg')] bg-cover bg-center bg-no-repeat;
 }
@@ -63,10 +68,11 @@
 }
 
 .clipped {
-  position: relative;
   clip-path: url(#card);
   -webkit-clip-path: url(#card);
-  border-radius: 0;
-  /* don't use border radius – clip controls the shape */
-  overflow: hidden;
+}
+
+.corner {
+  clip-path: url(#corner);
+  -webkit-clip-path: url(#corner);
 }

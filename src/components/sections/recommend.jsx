@@ -1,12 +1,19 @@
 import { PlantAnglonemaImage, rightArrowIcon } from "@/assets";
 import Card from "../cards/card";
 import Button from "../ui/button";
+import SectionHeading from "./heading";
 
 const RecommendationSection = () => (
   <section className="flex flex-col items-center gap-10 py-10">
-    <h2 className="section-heading-shadow text-center text-5xl font-semibold">Our Best o2</h2>
+    <SectionHeading
+      title={"Our Best o2"}
+      gradient={[
+        "bg-[linear-gradient(46.03deg,#55B000_-1.83%,rgba(255,255,255,0.156606)_49.18%,#50790B_100%)]",
+        "bg-[linear-gradient(226.03deg,#55B000_-1.83%,rgba(255,255,255,0.156606)_49.18%,#50790B_100%)]",
+      ]}
+    />
     <div>
-      <Card className="flex">
+      <Card className="flex rounded-[77px]">
         <div className="relative w-80">
           <div className="absolute -top-30 -left-30 size-120">
             <img
