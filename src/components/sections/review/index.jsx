@@ -8,7 +8,7 @@ const ReviewSection = () => (
     <SectionHeading title={"Customer Review"} />
     <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
       {reviews.map(({ name, img, star, message }, i) => (
-        <ClippedCard key={i} className="flex w-[23vw] flex-col justify-evenly p-6">
+        <ClippedCard key={i} className="flex flex-col justify-evenly p-6">
           <div className="mb-4 flex w-full items-start gap-6">
             <img
               src={img.src}
