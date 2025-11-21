@@ -1,6 +1,6 @@
 const Card = ({ children, className = "" }) => (
   <div
-    className={("rounded-2xl border border-white bg-white/5 backdrop-blur-2xl " + className).trim()}
+    className={("rounded-2xl bg-white/5 " + className).trim()}
   >
     {children}
   </div>

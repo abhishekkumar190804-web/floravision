@@ -10,7 +10,8 @@ const TrendSection = () => (
 
     {trends.map(({ title, img, description, price }, i) => (
       <Card
-        className={`flex w-4/5 flex-col items-center justify-evenly rounded-4xl backdrop-blur-2xl ${i > 0 && i % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"} md:rounded-[100px]`}
+        key={i}
+        className={`flex w-4/5 flex-col items-center justify-evenly pb-10 lg:pb-0 rounded-4xl backdrop-blur-2xl ${i > 0 && i % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"} md:rounded-[100px]`}
       >
         <div className="relative h-80 w-80">
           <img

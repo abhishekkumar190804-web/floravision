@@ -8,8 +8,8 @@ const Header = () => (
       FloraVision.
     </div>
     <ul className="font-indieflower hidden gap-5 text-xl lg:flex">
-      {headerNavigation.map(({ name, img }) => (
-        <li className="group cursor-pointer">
+      {headerNavigation.map(({ name, img },i) => (
+        <li key={i} className="group cursor-pointer">
           {img ? (
             <div className="flex items-center gap-1">
               {name}

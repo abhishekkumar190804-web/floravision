@@ -4,6 +4,7 @@
 @theme {
   --font-inter: "Inter";
   --font-indieflower: "IndieFlower";
+  --color-primary: #1A2217;
 }
 
 ::selection {
@@ -16,16 +17,11 @@
 }
 
 .drop-shadow-plant {
-  filter: drop-shadow(0 -0.169rem 0.138rem #0000000c) drop-shadow(0 -0.407rem 0.333rem #00000012)
-    drop-shadow(0 -0.767rem 0.627rem #00000016) drop-shadow(0 -1.368rem 1.117rem #0000001a)
-    drop-shadow(0 -2.559rem 2.089rem #0000001f) drop-shadow(0 -6.125rem 5rem #0000002b);
+  filter: drop-shadow(0 -0.169rem 0.138rem #0000000c) drop-shadow(0 -0.407rem 0.333rem #00000012) drop-shadow(0 -0.767rem 0.627rem #00000016) drop-shadow(0 -1.368rem 1.117rem #0000001a) drop-shadow(0 -2.559rem 2.089rem #0000001f) drop-shadow(0 -6.125rem 5rem #0000002b);
 }
 
 .drop-shadow-logo {
-  filter: drop-shadow(0 0.145rem 0.116rem #0000000b) drop-shadow(0 0.337rem 0.269rem #00000010)
-    drop-shadow(0 0.605rem 0.484rem #00000014) drop-shadow(0 1.004rem 0.803rem #00000017)
-    drop-shadow(0 1.653rem 1.322rem #0000001b) drop-shadow(0 2.889rem 2.312rem #00000020)
-    drop-shadow(0 6.25rem 5rem #0000002b);
+  filter: drop-shadow(0 0.145rem 0.116rem #0000000b) drop-shadow(0 0.337rem 0.269rem #00000010) drop-shadow(0 0.605rem 0.484rem #00000014) drop-shadow(0 1.004rem 0.803rem #00000017) drop-shadow(0 1.653rem 1.322rem #0000001b) drop-shadow(0 2.889rem 2.312rem #00000020) drop-shadow(0 6.25rem 5rem #0000002b);
 }
 
 .section-heading-shadow {
