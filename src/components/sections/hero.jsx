@@ -1,7 +1,7 @@
 import { PlantAnglonemaImage, playIcon, rightArrowIcon, RonnieReviewImage } from "@/assets";
-import ClippedCard from "../cards/clipped";
+import ClippedCard from "../ui/cards/clipped";
 import Button from "../ui/button";
-import Card from "../cards/card";
+import Card from "../ui/cards/card";
 import Stars from "./review/stars";
 
 const HeroSection = () => (
@@ -24,7 +24,7 @@ const HeroSection = () => (
         </div>
       </div>
 
-      <Card className="p-5 lg:w-[25vw]">
+      <Card className="p-5 lg:w-[25vw] backdrop-blur-[17px]">
         <div className="flex items-center gap-6 pb-5">
           <img
             src={RonnieReviewImage}

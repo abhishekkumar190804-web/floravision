@@ -1,5 +1,5 @@
 import { reviews } from "@/config/review.config";
-import ClippedCard from "../../cards/clipped";
+import ClippedCard from "../../ui/cards/clipped";
 import Stars from "./stars";
 import SectionHeading from "../heading";
 import Card from "./card";

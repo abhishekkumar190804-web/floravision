@@ -1,5 +1,5 @@
 import { PlantAnglonemaImage, rightArrowIcon } from "@/assets";
-import Card from "../cards/card";
+import Card from "../ui/cards/card";
 import Button from "../ui/button";
 import SectionHeading from "./heading";
 

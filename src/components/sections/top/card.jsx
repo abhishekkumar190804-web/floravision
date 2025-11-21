@@ -1,5 +1,5 @@
 import { shopIcon } from "@/assets";
-import ClippedCard from "@/components/cards/clipped";
+import ClippedCard from "@/components/ui/cards/clipped";
 import Button from "@/components/ui/button";
 
 const Card = ({ img, description, price, title }) => (

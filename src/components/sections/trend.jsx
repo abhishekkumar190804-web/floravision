@@ -1,5 +1,5 @@
 import { PlantainImage, shopIcon, TrendPlantImage } from "@/assets";
-import Card from "../cards/card";
+import Card from "../ui/cards/card";
 import Button from "../ui/button";
 import SectionHeading from "./heading";
 import { trends } from "@/config/trend.config";
@@ -11,7 +11,7 @@ const TrendSection = () => (
     {trends.map(({ title, img, description, price }, i) => (
       <Card
         key={i}
-        className={`flex w-4/5 flex-col items-center justify-evenly pb-10 lg:pb-0 rounded-4xl backdrop-blur-2xl ${i > 0 && i % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"} md:rounded-[100px]`}
+        className={`flex w-4/5 flex-col items-center justify-evenly rounded-4xl pb-10 backdrop-blur-2xl lg:pb-0 ${i > 0 && i % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"} md:rounded-[100px]`}
       >
         <div className="relative h-80 w-80">
           <img
