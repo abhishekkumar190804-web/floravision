@@ -2,7 +2,7 @@ import { logoIcon } from "@/assets";
 import { footerNavigation } from "@/config/navigation.config";
 
 const Footer = () => (
-  <footer className="grid w-full grid-cols-1 gap-20 p-10 lg:grid-cols-3">
+  <footer className="grid w-full grid-cols-1 gap-20 p-10 sm:grid-cols-2 lg:grid-cols-3">
     <div className="flex flex-col gap-10">
       <div className="flex cursor-pointer items-end gap-2 text-3xl font-black text-white/75">
         <img src={logoIcon} alt="plant" className="drop-shadow-logo size-14" />
@@ -28,7 +28,7 @@ const Footer = () => (
         ))}
       </ul>
     </div>
-    <div className="grid gap-30">
+    <div className="grid gap-30 sm:col-span-2 md:col-span-1 md:translate-x-2/3 lg:translate-0">
       <div className="grid gap-5">
         <h2 className="text-2xl font-extrabold">For Every Update.</h2>
         <form className="grid grid-cols-3 rounded-md border border-white p-px">

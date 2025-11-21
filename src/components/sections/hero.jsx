@@ -5,7 +5,7 @@ import Card from "../cards/card";
 import Stars from "./review/stars";
 
 const HeroSection = () => (
-  <section className="mt-20 flex flex-col justify-between p-10 text-white/75 lg:flex-row">
+  <section className="flex min-h-screen flex-col items-center justify-between p-10 text-white/75 lg:flex-row">
     <div className="flex flex-col gap-15">
       <div className="lg:max-w-[40vw]">
         <h2 className="text-6xl font-semibold">Earth’s Exhale</h2>

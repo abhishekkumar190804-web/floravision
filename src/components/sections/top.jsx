@@ -7,7 +7,7 @@ import SectionHeading from "./heading";
 const TopSection = () => (
   <section className="flex flex-col items-center gap-20 py-20">
     <SectionHeading title={"Our Top Selling Plants"} />
-    <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-3">
       {plants.map(({ img, description, price, title }, i) => (
         <div className="relative">
           <img
@@ -15,7 +15,10 @@ const TopSection = () => (
             alt={img.alt}
             className="absolute bottom-1/2 left-1/2 z-1 size-70 -translate-x-1/2"
           />
-          <ClippedCard key={i} className="flex h-full w-[22vw] flex-col items-center p-6">
+          <ClippedCard
+            key={i}
+            className="flex h-full max-w-[410px] flex-col items-center p-6 lg:w-[22vw]"
+          >
             <div className="mt-40 text-start">
               <h3 className="text-lg">{title}</h3>
               <p className="text-sm">{description}</p>

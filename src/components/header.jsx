@@ -1,4 +1,4 @@
-import { dropdownIcon, logoIcon, searchIcon, shopIcon } from "@/assets";
+import { logoIcon, searchIcon, shopIcon } from "@/assets";
 import { headerNavigation } from "@/config/navigation.config";
 
 const Header = () => (
@@ -7,7 +7,7 @@ const Header = () => (
       <img src={logoIcon} alt="plant" className="drop-shadow-logo size-8" />
       FloraVision.
     </div>
-    <ul className="font-indieflower flex gap-5 text-xl">
+    <ul className="font-indieflower hidden gap-5 text-xl lg:flex">
       {headerNavigation.map(({ name, img }) => (
         <li className="group cursor-pointer">
           {img ? (
@@ -27,10 +27,10 @@ const Header = () => (
       ))}
     </ul>
     <div className="flex items-center gap-5">
-      <button className="cursor-pointer">
+      <button className="hidden cursor-pointer lg:block">
         <img src={searchIcon} alt="search" className="size-5" />
       </button>
-      <button className="cursor-pointer">
+      <button className="hidden cursor-pointer lg:block">
         <img src={shopIcon} alt="shop" className="size-6" />
       </button>
       <button className="group flex size-6 cursor-pointer flex-col items-end justify-evenly">

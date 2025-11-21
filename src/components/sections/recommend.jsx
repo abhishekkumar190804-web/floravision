@@ -8,14 +8,14 @@ const RecommendationSection = () => (
     <SectionHeading
       title={"Our Best o2"}
       gradient={[
-        "bg-[linear-gradient(46.03deg,#55B000_-1.83%,rgba(255,255,255,0.156606)_49.18%,#50790B_100%)]",
-        "bg-[linear-gradient(226.03deg,#55B000_-1.83%,rgba(255,255,255,0.156606)_49.18%,#50790B_100%)]",
+        "bg-[linear-gradient(46.03deg,#55B000_-1.83%,rgba(255,255,255,0.156606)_49.18%,#50790B_100%)] -left-3!",
+        "bg-[linear-gradient(226.03deg,#55B000_-1.83%,rgba(255,255,255,0.156606)_49.18%,#50790B_100%)] -right-4!",
       ]}
     />
     <div>
-      <Card className="flex rounded-[77px]">
-        <div className="relative w-80">
-          <div className="absolute -top-30 -left-30 size-120">
+      <Card className="mt-10 flex flex-col items-center rounded-[77px] md:flex-row md:items-stretch">
+        <div className="relative w-50 md:w-80">
+          <div className="absolute -top-20 left-1/2 size-90 -translate-x-1/2 md:-top-30 md:-left-30 md:size-120 md:translate-0">
             <img
               src={PlantAnglonemaImage}
               alt="anglonema"
@@ -23,7 +23,7 @@ const RecommendationSection = () => (
             />
           </div>
         </div>
-        <div className="flex max-w-[50vw] flex-col gap-4 p-20">
+        <div className="mt-60 flex flex-col gap-4 p-10 md:m-0 md:max-w-[50vw] md:p-20">
           <h2>We Have Small And Best O2 Plants Collection’s</h2>
           <p>
             Oxygen-producing plants, often referred to as "O2 plants," are those that release oxygen
